@@ -190,9 +190,10 @@
 	}
 	.reveal section img {
 		display: block;
-		margin: 15px 0px;
+		margin: 15px 0;
+		width: 800px;
+		height: auto;
 		background: rgba(255,255,255,1);
-		border: 1px solid #666;
 		box-shadow: none;
 	}
 
