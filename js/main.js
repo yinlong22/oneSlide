@@ -171,8 +171,10 @@ const Editor = {
         this.$editInput = $('.editor textarea')
         this.$saveBtn = $('.editor .button-save')
         this.$slideContainer = $('.slides')
-        this.markdown = localStorage.markdown || `#↖鼠标浮动在左上角，点击图标开始
-        ## 为左右翻页 ### 为上下翻页
+        this.markdown = localStorage.markdown || `# ↖鼠标浮动在左上角，点击图标开始
+        ##为左右翻页 ###为上下翻页
+        ## 为左右翻页
+        ### 为上下翻页
         `
 
         this.bind()
@@ -252,7 +254,7 @@ const Theme = {
     },
 
     loadTheme() {
-        let theme = localStorage.theme || 'beige'
+        let theme = localStorage.theme || 'moon'
         let $link = document.createElement('link')
         $link.rel = 'stylesheet'
         $link.href = `css/theme/${theme}.css`
